@@ -9,11 +9,10 @@ date: 2025-12-11
 
 You can now receive notifications when your Workers builds start, succeed, fail, or get cancelled using [Queue Event Subscriptions](/queues/event-subscriptions/).
 
-[Workers Builds](/workers/ci-cd/builds/) publishes events to a [Queue](/queues/), and a consumer Worker processes them to send notifications wherever you need — Slack, Discord, email, or any webhook endpoint.
+[Workers Builds](/workers/ci-cd/builds/) publishes events to a [Queue](/queues/) that your Worker can read messages from, and then send notifications wherever you need — Slack, Discord, email, or any webhook endpoint.
 
-### Template available
 
-We've published a template that sends build notifications to Slack:
+You can deploy [this Worker](https://github.com/yomna-shousha/workers-builds-queue-subscriptions) to your own Cloudflare account, and it will send build notifications to Slack:
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/yomna-shousha/workers-builds-queue-subscriptions)
 
