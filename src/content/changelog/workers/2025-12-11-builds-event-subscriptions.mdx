@@ -4,10 +4,10 @@ description: Use Queue Event Subscriptions to receive Workers Builds events and 
 products:
   - workers
   - queues
-date: 2025-12-11
+date: 2025-12-15
 ---
 
-You can now receive notifications when your Workers builds start, succeed, fail, or get cancelled using [Queue Event Subscriptions](/queues/event-subscriptions/).
+You can now receive notifications when your Workers builds start, succeed, fail, or get cancelled using [Event Subscriptions](/queues/event-subscriptions/).
 
 [Workers Builds](/workers/ci-cd/builds/) publishes events to a [Queue](/queues/) that your Worker can read messages from, and then send notifications wherever you need — Slack, Discord, email, or any webhook endpoint.
 
@@ -20,7 +20,5 @@ The template includes:
 - Build status with Preview/Live URLs for successful deployments
 - Inline build logs for failed or cancelled builds
 - Full event payload for debugging
-
-The `CLOUDFLARE_API_TOKEN` is optional. Notifications work without it, just without the additional URL and log details.
 
 For setup instructions, refer to the [template README](https://github.com/yomna-shousha/workers-builds-queue-subscriptions#readme) or the [Event Subscriptions documentation](/queues/event-subscriptions/manage-event-subscriptions/).
