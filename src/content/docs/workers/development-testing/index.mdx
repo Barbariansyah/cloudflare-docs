@@ -143,21 +143,6 @@ We recommend configuring specific bindings to connect to their remote counterpar
 
 The following bindings are recommended to have `remote: true` in your Wrangler configuration:
 
-#### [Browser Rendering](/workers/wrangler/configuration/#browser-rendering):
-
-To interact with a real headless browser for rendering. There is no current local simulation for Browser Rendering.
-
-<WranglerConfig>
-```jsonc title="wrangler.jsonc"
-{
-	"browser": {
-		"binding": "MY_BROWSER",
-		"remote": true
-	},
-}
-```
-</WranglerConfig>
-
 #### [Workers AI](/workers/wrangler/configuration/#workers-ai):
 
 To utilize actual AI models deployed on Cloudflare's network for inference. There is no current local simulation for Workers AI.
